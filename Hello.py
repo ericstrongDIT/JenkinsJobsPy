@@ -1,11 +1,17 @@
-def printMany(text):
-    print(text)
-    print('changes')
+from Person import Person
+
+def printPerson(p):
+    print(p)
+    print(p.name)
+    print(p.walk())
+
 
 def main():
-    print('Hello!')
-    for i in range(10):
-        printMany("Eric Strong and Laura")
+    eric = Person('Eric Strong')
+    laura = Person('Laura Bermingham')
+
+    printPerson(eric)
+    printPerson(laura)
 
 if __name__ == "__main__":
     main()
