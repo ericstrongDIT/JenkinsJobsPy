@@ -1,5 +1,6 @@
 def printMany(text):
     print(text)
+    print('changes')
 
 def main():
     print('Hello!')
